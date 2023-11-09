@@ -1,15 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './Header';
-import Footer from './Footer';
-import Home from './Home';
+import Tournament from './Tournament';
+import Accueil from './Accueil';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Home />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Tournament />} />
+          <Route path="/accueil" element={<Accueil />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

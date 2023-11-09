@@ -1,6 +1,8 @@
 import './App.css';
+import Header from './Header';
+import Footer from './Footer';
 
-function Home() {
+function Tournament() {
 
     const articles = [
         {
@@ -72,28 +74,27 @@ function Home() {
     
     // récupérer les trois derniers de la nouvelle liste
 
-    const lastThreePublishedArticles = publishedArticles.slice(-3)
+    
 
     return(
+      <>
+      <Header />
         <main className=''>
           <div>
-            <h2>Les trois derniers articles :</h2>
+            <h2>Tournois</h2>
           </div>
           <div className='flex'>
-            {lastThreePublishedArticles.map((article) => {
-                return(
                     <article>
-                        <h2>{article.title}</h2>
-                        <p>Prix : {article.price}</p>
+                        <h2>Nom du tournoi</h2>
+                        <p>Durée du tournoi</p>
                     </article>
-          
-            );
-            })}
           </div>
         </main>
+      <Footer />
+      </>
     )
 
     
 }
 
-export default Home;
+export default Tournament;

@@ -4,12 +4,12 @@ import './App.css';
 function Header () {
     return(
         <header className="">
-      <h1>Le blog</h1>
+      <h1>MARH Games</h1>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Articles</li>
-          <li>Contact</li>
+          <li><a href="">Accueil</a></li>
+          <li><a href="">Tournoi</a></li>
+          <li><a href="">Infos pratiques</a></li>
           <ProfileMenu />
         </ul>
       </nav>
